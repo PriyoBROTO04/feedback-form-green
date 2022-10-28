@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Xavier's High </title>
+    <link rel="shortcut icon" href="Resources/Images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 425px)">
+
+</head>
+
+<body>
+    <div class="bigcontainer">
+        <!-- <div class="tabs transition">
+            <div class="tab general">General</div>
+            <div class="tab refermatory">Refermatory</div>
+            <div class="tab information">Information</div>
+        </div> -->
+        <div class="container">
+            <div class="intro card cardactive ">
+                <dix class="title">
+                    XAVIER’S HIGH FEEDBACK PROGRAM
+                </dix>
+                <div class="subtitle">
+                    Your feedback helps us evaluate ourselves, it also helps us create a better community for you. Be honest and let us know which aspects of Xavier's High need better execution.
+                </div>
+                <div class="button" id="enterbtn">
+                    Enter the Program
+                </div>
+
+            </div>
+            <form action="/register" class="form" onsubmit="return validateform()" method="POST">
+
+                <div class="gen card ">
+                    <div class="field rating">
+                        <div class="ques">
+                            What would you rate our user experience?
+                        </div>
+                        <div class="input-field reactions">
+                            <input type="radio" name="mood" id="mood-5" class="radio" value="excellent" checked>
+                            <label for="mood-5" class="emoji emoji-5">😍</label>
+
+                            <input type="radio" name="mood" id="mood-4" class="radio" value="good">
+                            <label for="mood-4" class="emoji emoji-4">🙂</label>
+
+                            <input type="radio" name="mood" id="mood-3" class="radio" value="average">
+                            <label for="mood-3" class="emoji emoji-3">😐</label>
+
+                            <input type="radio" name="mood" id="mood-2" class="radio" value="poor">
+                            <label for="mood-2" class="emoji emoji-2">😕</label>
+
+                            <input type="radio" name="mood" id="mood-1" class="radio" value="worst">
+                            <label for="mood-1" class="emoji emoji-1">😠</label>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="field standout">
+                        <div class="ques">
+                            What do you like about our community?
+                        </div>
+                        <div class="input-field message">
+                            <textarea name="standout" id="standout" cols="30" rows="5"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="nav">
+                        <div class="button backbtn">
+                            Back
+                        </div>
+                        <div class="button nextbtn">
+                            Next
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="refer card ">
+                    <div class="field lacking">
+                        <div class="ques">
+                            Where do you think we are lacking? Do you have an idea for a solution?
+                        </div>
+                        <div class="input-field message">
+                            <textarea name="lacking" id="lacking" cols="30" rows="5"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="field suggest">
+                        <div class="ques">
+                            Do you have some new ideas that we can implement?
+                        </div>
+                        <div class="input-field message">
+                            <textarea name="suggest" id="suggest" cols="30" rows="5"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="nav">
+                        <div class="button backbtn">
+                            Back
+                        </div>
+                        <div class="button nextbtn">
+                            Next
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="info card ">
+                    <div class="field discord-id">
+                        <div class="ques">
+                            What is your Discord User ID
+                        </div>
+                        <div class="input-field ">
+                            <input type="number" name="ID" id="ID" placeholder="713603700310686987">
+                        </div>
+                    </div>
+
+                    <div class="field discord-username">
+                        <div class="ques">
+                            What is your Discord Username and Tag
+                        </div>
+                        <div class="input-field ">
+                            <input type="text" name="username" id="username" placeholder="wumpus#1234 ">
+                        </div>
+                    </div>
+
+
+                    <div class="field your-server">
+                        <div class="ques">
+                            You own a community? If yes, describe it
+                        </div>
+                        <div class="input-field message">
+                            <textarea name="yourserver" id="your-server" cols="30" rows="5"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="nav">
+                        <div class="button backbtn">
+                            Back
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

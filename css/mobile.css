@@ -1,0 +1,113 @@
+body{
+    overflow: hidden;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+  }
+.bigcontainer{
+    width: 331px;
+    height: 453px;
+}
+.container{
+    width: 331px;
+    height: 353px;
+    /* opacity: 0; */
+}
+.tabs{
+    top:17.5%
+}
+.tabs.tabsactive{
+    top: 8.5%;
+}
+.tab{
+    font-size: 11px;
+    padding: 11px 0px;
+    height: 35px;
+}
+.tab.tabactive{
+    padding: 13px 0px;
+    font-size: 11px;
+    height: 40px;
+}
+.tab.general.tabactive{
+    font-size: 13px;
+    padding: 12px 0px;
+}
+.card{
+    padding: 30px;
+    transition: all 0.2s ease;
+    transition-delay:0.3s ;
+}
+.field{
+    padding-bottom: 9px;
+}
+.ques{
+    font-size: 11px
+}
+.nav{
+    padding-top: 1px;
+}
+.nav .button{
+    font-size: 12px;
+    padding: 12px;
+    width: 129px;
+    border-radius: 8px;
+}
+
+.title{
+    font-size: 46px;
+    line-height: 40px;
+}
+.subtitle{
+    font-size: 9px;
+    padding: 25px 0px;
+}
+.intro .button{
+    font-size: 12px;
+    padding: 17px;
+}
+.gen{
+    opacity: 0;
+}
+.reactions{
+    height: 62px;
+    border-radius: 10px;
+}
+.emoji{
+    font-size: 30px;
+    top: -1px;
+}
+.message textarea {
+    border-radius: 8px;
+    font-size: 12px;
+    height: 93px;
+}
+.field.suggest{
+    padding-bottom: 21px;
+}
+.standout .message textarea{
+    height: 126px;
+} 
+.lacking .message textarea {
+    height: 65px;
+}
+.input-field input[type=text],
+.input-field input[type=number]{
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 2px 7px;
+}
+.field.your-server{
+    padding-bottom: 14px;
+}
+.your-server .message textarea{
+    height: 111px;
+}
+.info .nav button {
+    width: 129px;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 8px;
+}
