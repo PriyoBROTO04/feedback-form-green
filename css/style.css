@@ -421,7 +421,7 @@ body {
 }
 .input-field input[type=text].error,
 .input-field input[type=number].error{
-    outline: 3px solid #d34d4d;
+    outline: 3px solid #4d010185;
     border-color: transparent;
     animation: shake 1s ease-in-out;
 
