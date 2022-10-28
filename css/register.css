@@ -15,7 +15,7 @@
     color: white;
 }
 body {
-    background: url("../Resources/Images/bg.png") center center no-repeat;
+    background: url("../Resources/Images/bg1.jpg") center center no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -49,6 +49,7 @@ body {
 .image img{
     position: absolute;
     top: -90%;
+    filter: hue-rotate(80deg);
 }
 .button{
     width: 450px;
