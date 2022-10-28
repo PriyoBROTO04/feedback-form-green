@@ -209,17 +209,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    margin-block: 8px;
+    margin-block: 11px;
+    /* background-color:#a9b1a6 ; */
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 5px solid white;
+    border: 2px solid #abb5aa;
     border-radius: 100vw;
-    background-color: #4a4ebf;
+    background-color: #5e8654;
 }
 
 .message textarea {
@@ -481,6 +482,12 @@ body {
 .your-server .message textarea {
     height: 180px;
 }
+.infologo img{
+    height: 20px;
+    position: relative;
+    top: 3px;
+    filter: hue-rotate(137deg);
+}
 
 .info .nav button {
     width: 232px;
@@ -517,7 +524,7 @@ footer {
 
 mark {
     background-color: transparent;
-    color: #567a53;
+    color: #b8f86a;
 }
 
 footer a {

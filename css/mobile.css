@@ -118,6 +118,10 @@ html {
 .field.your-server{
     padding-bottom: 14px;
 }
+.infologo img{
+    height: 11px;
+    top: 2px;
+}
 .your-server .message textarea{
     height: 100px;
 }
