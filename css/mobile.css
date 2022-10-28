@@ -60,12 +60,14 @@ html {
     line-height: 40px;
 }
 .subtitle{
-    font-size: 9px;
-    padding: 25px 0px;
+    font-size: 10px;
+    padding: 22px 0px;
+    line-height: 12px;
 }
 .intro .button{
     font-size: 12px;
-    padding: 17px;
+    padding: 12px;
+    height: 40px;
 }
 .gen{
     opacity: 0;
@@ -84,13 +86,19 @@ html {
     height: 93px;
 }
 .field.suggest{
-    padding-bottom: 21px;
+    padding-bottom: 7px;
 }
 .standout .message textarea{
-    height: 126px;
+    height: 120px;
 } 
+.field.lacking {
+    padding-bottom: 0px;
+}
 .lacking .message textarea {
     height: 65px;
+}
+.suggest .message textarea {
+    height: 90px;
 }
 .input-field input[type=text],
 .input-field input[type=number]{
@@ -98,12 +106,20 @@ html {
     border-radius: 5px;
     font-size: 10px;
     padding: 2px 7px;
+    padding-top: 4px;
+}
+.input-field input[type=text]{
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 2px 7px;
+    padding-top: 2px;
 }
 .field.your-server{
     padding-bottom: 14px;
 }
 .your-server .message textarea{
-    height: 111px;
+    height: 100px;
 }
 .info .nav button {
     width: 129px;
