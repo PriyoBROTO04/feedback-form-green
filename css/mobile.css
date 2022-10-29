@@ -102,7 +102,7 @@ html {
     height: 120px;
 } 
 .field.lacking {
-    padding-bottom: 0px;
+    padding-bottom: 6px;
 }
 .lacking .message textarea {
     height: 65px;
@@ -133,7 +133,7 @@ html {
     top: 2px;
 }
 .your-server .message textarea{
-    height: 104px;
+    height: 109px;
 }
 .info .nav button {
     width: 129px;

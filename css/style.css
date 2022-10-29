@@ -26,8 +26,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Atkinson-Hyperlegible;
-    font-weight: 400;
+    font-family: Arca Majora;
 }
 
 body {
@@ -188,6 +187,7 @@ body {
 
 .subtitle {
     padding: 28px 0px;
+    font-family: 'Nunito', sans-serif;
 
     font-size: 16.77px;
     line-height: 19px;
@@ -196,7 +196,7 @@ body {
 .intro .button {
     width: 100%;
     padding: 20px;
-    background-color: rgba(94, 134, 84, 0.7);
+    background-color: rgba(148, 188, 138, 0.7);
     text-align: center;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -210,7 +210,7 @@ body {
 .intro .button:hover {
     /* background-color: #4a4ebf;
     color: white; */
-    box-shadow: 0px 0px 17px 0px #D4D589;
+    box-shadow: 0px 0px 17px 0px #92B586;
 }
 
 
@@ -237,12 +237,12 @@ body {
 }
 
 .field {
-    padding-bottom: 14px;
+    padding-bottom: 25px;
 }
 
 
 .ques {
-    font-size: 19.6px;
+    font-size: 18.6px;
     font-weight: 600;
     padding-bottom: 7px;
 }
@@ -269,7 +269,7 @@ body {
     border-radius: 20px;
     resize: none;
     border-color: #8E8A88;
-    color: rgb(94, 134, 84);
+    color: black;
     background-color: rgba(255, 255, 255, 0.525);
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -394,7 +394,7 @@ body {
     display: inline-block;
     width: 232px;
     padding: 20px;
-    background-color: rgba(94, 134, 84, 0.7);
+    background-color: rgba(148, 188, 138, 0.7);
     text-align: center;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -409,7 +409,7 @@ body {
 .nav .button:hover {
     /* background-color: #4a4ebf;
         color: white; */
-    box-shadow: 0px 0px 17px 0px #D4D589;
+    box-shadow: 0px 0px 17px 0px #92B586;
 }
 
 
@@ -435,14 +435,17 @@ body {
 }
 
 .field.lacking{
-    padding-bottom: 6px;
+    padding-bottom: 26px;
 }
 .lacking .message textarea {
-    height: 114px;
+    height: 118px;
 }
 
 .suggest .message textarea {
-    height: 142px;
+    height: 164px;
+}
+.field.suggest{
+    padding-bottom: 15px;
 }
 
 
@@ -477,7 +480,7 @@ body {
     border-radius: 8px;
     outline: none;
     border: 1px solid #8E8A88;
-    color: rgb(94, 134, 84);
+    color: black;
     background-color: rgba(255, 255, 255, 0.525);
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
@@ -497,6 +500,8 @@ body {
 .input-field input[type=number]::-webkit-inner-spin-button,
 .input-field input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
@@ -522,7 +527,7 @@ body {
 }
 
 .your-server .message textarea {
-    height: 192px;
+    height: 180px;
 }
 .infologo img{
     height: 20px;
@@ -534,7 +539,7 @@ body {
 .info .nav button {
     width: 232px;
     padding: 20px;
-    background-color: rgba(94, 134, 84, 0.7);
+    background-color: rgba(148, 188, 138, 0.7);
     text-align: center;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -549,7 +554,7 @@ body {
 .info .nav button:hover {
     /* background-color: #4a4ebf;
     color: white; */
-    box-shadow: 0px 0px 17px 0px #D4D589;
+    box-shadow: 0px 0px 17px 0px #92B586;
 }
 
 footer {
