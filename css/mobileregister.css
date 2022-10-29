@@ -4,8 +4,9 @@
     top: 55%;
 }
 .image img{
+    position: relative;
     width: 90%;
-    top: -73%;
+    top: -176%;
 }
 .text{
     
@@ -17,4 +18,12 @@
 .button{
     font-size: 10px;
     height: 35px;
+}
+.loader-wrapper img{
+    width: 30%;
+}
+.facts{
+    width: 77%;
+    font-size: 13px;
+    line-height: 15px;
 }

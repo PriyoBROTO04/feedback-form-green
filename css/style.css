@@ -32,10 +32,49 @@
 
 body {
     background: url("../Resources/Images/bg1.jpg") center center no-repeat;
+    background-color: #133006;
+
     background-size: cover;
+    overflow: hidden;
     height: 100vh;
 }
 
+.loader-wrapper{
+    pointer-events: none;
+    position: absolute;
+    background-color: rgba(19, 48, 6, 0.8);
+    backdrop-filter: blur(11px);
+    
+    
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+@keyframes spin {
+    0%{
+        animation-timing-function: cubic-bezier(0.5856,0.0703,0.4143,0.9297);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+.loader-wrapper img{
+    min-width: 150px;
+    max-width: 12%;
+    transform: rotate(0deg); 
+    animation: 2.22222s linear -0.833333s infinite normal forwards running spin;
+}
+.facts{
+    font-family: 'Nunito', sans-serif;;
+}
 .transition {
     transition: all 0.8s ease-in-out;
 }
@@ -304,38 +343,41 @@ body {
 }
 
 .emoji {
-    font-size: 60px;
     position: relative;
-    top: -3px;
-    padding: 0px 3px;
-    filter: sepia(1) saturate(0);
+    top: 4px;
+    width: calc(100% / 5 - 6px);
+    padding: 0px 16px;
+    
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    
+}
+.emoji img{
+    width: 100%;
+    filter: sepia(1) saturate(0) drop-shadow(0px 0px 0px rgba(255, 0, 0, 0));
+    transition: all 0.08s ease-in-out;
 }
 
-.emoji:hover {
-    filter: sepia(0) saturate(0.8);
-    transform: scale(1.1) translateY(-5px);
-    text-shadow: 0px 5px 8px #946e1cbd;
 
+.emoji img:hover{
+    filter: sepia(0) saturate(1) drop-shadow(0px 8px 8px #AFA36A);
+    transform: scale(1.1) translateY(-5px);
 }
 
-#mood-1:checked~.emoji-1,
-#mood-2:checked~.emoji-2,
-#mood-3:checked~.emoji-3,
-#mood-4:checked~.emoji-4,
-#mood-5:checked~.emoji-5 {
-    filter: saturate(0.8);
+#mood-1:checked~.emoji-1 img,
+#mood-2:checked~.emoji-2 img,
+#mood-3:checked~.emoji-3 img,
+#mood-4:checked~.emoji-4 img,
+#mood-5:checked~.emoji-5 img {
+    filter: sepia(0) saturate(1) drop-shadow(0px 8px 8px #AFA36A);
     transform: scale(1.1) translateY(-5px);
-    text-shadow: 0px 5px 8px #e4b34a;
 }
 
 .standout {
-    padding-bottom: 28px;
+    padding-bottom: 15px;
 }
 
 .standout .message textarea {
-    height: 189px;
+    height: 201px;
 }
 
 
@@ -475,12 +517,12 @@ body {
 }
 
 .your-server {
-    padding-bottom: 26px;
+    padding-bottom: 15px;
 
 }
 
 .your-server .message textarea {
-    height: 180px;
+    height: 192px;
 }
 .infologo img{
     height: 20px;

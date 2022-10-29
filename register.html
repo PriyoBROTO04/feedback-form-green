@@ -10,6 +10,9 @@
     <title>Thank You - Xavier's High</title>
 </head>
 <body>
+    <div class="loader-wrapper">
+        <img src="Resources/Images/loader.svg" alt="" srcset="">
+    </div>
     <div class="container">
         <div class="image">
             <img src="Resources/Images/illustration.png" alt="" srcset="">
@@ -28,5 +31,14 @@
     <footer>
         Developed and maintained by <a href="https://priyobroto04.github.io/MySite/" target="_blank"><mark>danté</mark> </a>| Designed by <a href="https://messyhunk.carrd.co/" target="_blank"><mark>messyhunk</mark></a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        const preloader=$('.loader-wrapper');
+        setTimeout(function myFunction(){
+            preloader.fadeOut();
+            },2000)
+        
+
+    </script>
 </body>
 </html>

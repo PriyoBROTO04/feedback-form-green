@@ -9,6 +9,15 @@ html {
     width: 331px;
     height: 453px;
 }
+.loader-wrapper img{
+    width: 30%;
+}
+.facts{
+    width: 77%;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}
 .container{
     width: 331px;
     height: 353px;
@@ -78,7 +87,8 @@ html {
 }
 .emoji{
     font-size: 30px;
-    top: -1px;
+    top: 7px;
+    padding: 0px 7px;
 }
 .message textarea {
     border-radius: 8px;
@@ -86,7 +96,7 @@ html {
     height: 93px;
 }
 .field.suggest{
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 }
 .standout .message textarea{
     height: 120px;
@@ -98,7 +108,7 @@ html {
     height: 65px;
 }
 .suggest .message textarea {
-    height: 90px;
+    height: 87px;
 }
 .input-field input[type=text],
 .input-field input[type=number]{
@@ -116,14 +126,14 @@ html {
     padding-top: 2px;
 }
 .field.your-server{
-    padding-bottom: 14px;
+    padding-bottom: 9px;
 }
 .infologo img{
     height: 11px;
     top: 2px;
 }
 .your-server .message textarea{
-    height: 100px;
+    height: 104px;
 }
 .info .nav button {
     width: 129px;

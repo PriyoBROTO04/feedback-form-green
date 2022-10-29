@@ -13,6 +13,17 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <img src="Resources/Images/loader.svg" alt="" srcset="">
+        <div class="facts">
+            <div class="fact">"Xavier's High was originally a private server for 100 people."</div>
+            <div class="fact">"Since the first day on Xavier's High, we never invited Mee6."</div>
+            <div class="fact">"We had our first logo from made in Pixlr, an online editor."</div>
+            <div class="fact">"When we made our server public it had >100 public channels altogether!"</div>
+            <div class="fact">"Previously we used to update the server everyday , now we limited it to once per week..."</div>
+            <div class="fact">"The form uses <i>Atkinson Hyperlegible Font</i> from Braille Institute, proved to be the perfect font for accessibility."</div>
+        </div>
+    </div>
     <div class="bigcontainer">
         <!-- <div class="tabs transition">
             <div class="tab general">General</div>
@@ -41,19 +52,19 @@
                         </div>
                         <div class="input-field reactions">
                             <input type="radio" name="mood" id="mood-5" class="radio" value="excellent" checked>
-                            <label for="mood-5" class="emoji emoji-5">😍</label>
+                            <label for="mood-5" class="emoji emoji-5"><img src="Resources/Images/emoji/Group 42.png" alt="" srcset=""></label>
 
                             <input type="radio" name="mood" id="mood-4" class="radio" value="good">
-                            <label for="mood-4" class="emoji emoji-4">🙂</label>
+                            <label for="mood-4" class="emoji emoji-4"><img src="Resources/Images/emoji/Group 43.png" alt="" srcset=""></label>
 
                             <input type="radio" name="mood" id="mood-3" class="radio" value="average">
-                            <label for="mood-3" class="emoji emoji-3">😐</label>
+                            <label for="mood-3" class="emoji emoji-3"><img src="Resources/Images/emoji/Group 44.png" alt="" srcset=""></label>
 
                             <input type="radio" name="mood" id="mood-2" class="radio" value="poor">
-                            <label for="mood-2" class="emoji emoji-2">😕</label>
+                            <label for="mood-2" class="emoji emoji-2"><img src="Resources/Images/emoji/Group 45.png" alt="" srcset=""></label>
 
                             <input type="radio" name="mood" id="mood-1" class="radio" value="worst">
-                            <label for="mood-1" class="emoji emoji-1">😠</label>
+                            <label for="mood-1" class="emoji emoji-1"><img src="Resources/Images/emoji/Group 46.png" alt="" srcset=""></label>
 
 
 
@@ -174,9 +185,26 @@
     </footer>
 
 
-
-
     <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        const preloader=$('.loader-wrapper');
+        window.onload=setTimeout(function myFunction(){
+            preloader.fadeOut();
+            },3000)
+        
+        
+            var divtags=$("div.fact");
+            if(divtags.length){
+                var display=Math.floor(Math.random() * divtags.length);
+                for(var i=0;i<divtags.length;i++){
+                    if(i!==display){
+                        $(divtags[i]).hide();
+                    }
+                }
+            }
+    </script>
+    
 
 </body>
 
